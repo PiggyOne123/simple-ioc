@@ -1,4 +1,4 @@
-package dao;
+package com.zhuyi.dao;
 
 import java.util.List;
 

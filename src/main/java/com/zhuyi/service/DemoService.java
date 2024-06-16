@@ -1,4 +1,4 @@
-package service;
+package com.zhuyi.service;
 
 import java.util.List;
 

@@ -1,7 +1,8 @@
-package controller;
+package com.zhuyi.controller;
 
-import service.DemoService;
-import service.impl.DemoServiceImpl;
+import com.zhuyi.factoty.BeanFactory;
+import com.zhuyi.service.DemoService;
+import com.zhuyi.service.impl.DemoServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -17,7 +18,8 @@ import java.util.List;
  */
 @WebServlet(urlPatterns = "/demo")
 public class DemoServlet extends HttpServlet {
-    private DemoService demoService = new DemoServiceImpl();
+    // 通过BeanFactory获取名为"demoService"的Bean实例
+    DemoService demoService = (DemoService) BeanFactory.getBean("demoService");
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

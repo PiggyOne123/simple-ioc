@@ -1,9 +1,8 @@
-package dao.impl;
+package com.zhuyi.dao.impl;
 
-import dao.DemoDao;
+import com.zhuyi.dao.DemoDao;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 /**
