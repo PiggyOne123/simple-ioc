@@ -9,10 +9,15 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @create 2024/7/15 17:55
  */
 public class BynameApplication {
+    /**
+     * 通过名字查找bean
+     */
     public static void main(String[] args) {
         BeanFactory factory = new ClassPathXmlApplicationContext("basic_dl/byname.xml");
         Person person= (Person) factory.getBean("person");
         System.out.println("bean的全限定名和内存地址：");
         System.out.println(person);
     }
+
+
 }
