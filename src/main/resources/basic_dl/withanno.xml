@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="black" class="com.basic_dl.withanno.bean.Black"></bean>
+    <bean id="dog" class="com.basic_dl.withanno.bean.Dog"></bean>
+    <bean id="red" class="com.basic_dl.withanno.bean.Red"></bean>
+</beans>
